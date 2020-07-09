@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Observable} from 'rxjs';
-import {GameService} from 'src/app/services/game.service';
+import {games, GameService} from 'src/app/services/game.service';
 import {Game} from 'types';
 
 @Component({
@@ -24,5 +24,13 @@ export class GameHistoryPage {
 
   gameClicked(game: Game) {
     this.router.navigate([this.roomId, 'games', game.id]);
+  }
+
+  async migrate() {
+    let migrated = 0;
+    for (const game of games) {
+      await this.gameService.createGame(game);
+      console.log(`migrated ${++migrated}`);
+    }
   }
 }
