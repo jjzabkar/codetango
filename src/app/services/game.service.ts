@@ -101,7 +101,36 @@ export class GameService {
 }
 
 export const games: Game[] = [
-  // april 23rd
+  // MAY 12TH
+  {
+    blueTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      color: TeamTypes.RED,
+      userIds: [
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'nmosnaUIA2gXtm7PCKkhWlGrzEu2',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      ],
+    },
+    blueAgents: 0,
+    redAgents: 2,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/12/20 12:33:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/12/20 01:04:00 pm')).getTime()
+  },
 ];
 
 
@@ -773,6 +802,380 @@ const migrated: Game[] = [
     tiles: [],
     createdAt: new Date(Date.parse('04/23/20 01:11:00 pm')).getTime(),
     completedAt: new Date(Date.parse('04/23/20 01:21:00 pm')).getTime()
+  },
+  // APRIL 28TH
+  {
+    blueTeam: {
+      spymaster: '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.RED,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      ],
+    },
+    blueAgents: 8,
+    redAgents: 8,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/28/20 12:31:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/28/20 12:35:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.RED,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      ],
+    },
+    blueAgents: 4,
+    redAgents: 3,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/28/20 12:36:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/28/20 12:53:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+      ],
+    },
+    redTeam: {
+      spymaster: 'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+      color: TeamTypes.RED,
+      userIds: [
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      ],
+    },
+    blueAgents: 0,
+    redAgents: 2,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/28/20 12:55:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/28/20 01:31:00 pm')).getTime()
+  },
+  // APRIL 30TH
+  {
+    blueTeam: {
+      spymaster: 'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      ],
+    },
+    redTeam: {
+      spymaster: 'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      color: TeamTypes.RED,
+      userIds: [
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+      ],
+    },
+    blueAgents: 1,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/30/20 12:33:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/30/20 12:53:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+      ],
+    },
+    redTeam: {
+      spymaster: 'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+      color: TeamTypes.RED,
+      userIds: [
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+      ],
+    },
+    blueAgents: 7,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/30/20 12:54:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/30/20 01:11:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'dOCi9artoJe7311Lpth7LPscHC43',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      ],
+    },
+    redTeam: {
+      spymaster: 'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+      color: TeamTypes.RED,
+      userIds: [
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      ],
+    },
+    blueAgents: 1,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('04/30/20 01:13:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('04/30/20 01:35:00 pm')).getTime()
+  },
+  // MAY 5TH
+  {
+    blueTeam: {
+      spymaster: 'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'Josh',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+      ],
+    },
+    redTeam: {
+      spymaster: 'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+      color: TeamTypes.RED,
+      userIds: [
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'Israel',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      ],
+    },
+    blueAgents: 0,
+    redAgents: 1,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/05/20 12:32:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/05/20 12:55:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'Josh',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'Josh',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      ],
+    },
+    redTeam: {
+      spymaster: 'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      color: TeamTypes.RED,
+      userIds: [
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'Israel',
+      ],
+    },
+    blueAgents: 0,
+    redAgents: 5,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/05/20 12:58:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/05/20 01:14:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      ],
+    },
+    redTeam: {
+      spymaster: 'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      color: TeamTypes.RED,
+      userIds: [
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'sQYndNihzeP8duvwiJjUFvO3Ckx2',
+      ],
+    },
+    blueAgents: 1,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/05/20 01:20:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/05/20 01:32:00 pm')).getTime()
+  },
+  // MAY 7TH
+  {
+    blueTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'Monica',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      color: TeamTypes.RED,
+      userIds: [
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'Stephanie',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+      ],
+    },
+    blueAgents: 3,
+    redAgents: 6,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/07/20 12:36:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/07/20 12:53:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'Monica',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+      color: TeamTypes.RED,
+      userIds: [
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'Stephanie',
+      ],
+    },
+    blueAgents: 1,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/07/20 12:54:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/07/20 01:26:00 pm')).getTime()
+  },
+  // MAY 12TH
+  {
+    blueTeam: {
+      spymaster: 'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'NShg129LtWXFFqWq3VhW1SfzvVd2',
+      color: TeamTypes.RED,
+      userIds: [
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'nmosnaUIA2gXtm7PCKkhWlGrzEu2',
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      ],
+    },
+    blueAgents: 0,
+    redAgents: 2,
+    status: GameStatus.BLUE_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/12/20 12:33:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/12/20 01:04:00 pm')).getTime()
+  },
+  {
+    blueTeam: {
+      spymaster: 'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+      color: TeamTypes.BLUE,
+      userIds: [
+        'VhrRDXndF5hW7kLvyhxYMBSTwYq1',
+        'iw6pV4i9vcceJkX1m9HTUbIKYFv1',
+        'dOCi9artoJe7311Lpth7LPscHC43',
+        '8cKVyZrZOdfiaMDwdAQwVQyPjwm2',
+      ],
+    },
+    redTeam: {
+      spymaster: 'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+      color: TeamTypes.RED,
+      userIds: [
+        'bVBSOeWBI4bJGIJNpbTf6MpCgbS2',
+        'NShg129LtWXFFqWq3VhW1SfzvVd2',
+        'RBy1pYAbPTb7SAzDDbYbwHXqVDJ3',
+        'nmosnaUIA2gXtm7PCKkhWlGrzEu2',
+      ],
+    },
+    blueAgents: 2,
+    redAgents: 0,
+    status: GameStatus.RED_WON,
+    roomId: 'tangocard',
+    tiles: [],
+    createdAt: new Date(Date.parse('05/12/20 01:06:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('05/12/20 01:42:00 pm')).getTime()
   },
   // JUNE 4TH
   {
