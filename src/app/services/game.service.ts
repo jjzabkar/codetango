@@ -137,7 +137,7 @@ export const games: Game[] = [
 
 
 // MIGRATED FROM HERE ON DOWN
-const migrated: Game[] = [
+export const migrated: Game[] = [
   // MARCH 19TH
   {
     blueTeam: {
@@ -2117,8 +2117,8 @@ const migrated: Game[] = [
     status: GameStatus.RED_WON,
     roomId: 'tangocard',
     tiles: [],
-    createdAt: new Date(Date.parse('06/18/20 01:01:00 pm')).getTime(),
-    completedAt: new Date(Date.parse('06/18/20 01:08:00 pm')).getTime()
+    createdAt: new Date(Date.parse('06/18/20 01:10:00 pm')).getTime(),
+    completedAt: new Date(Date.parse('06/18/20 01:27:00 pm')).getTime()
   },
   // JUNE 23RD
   {

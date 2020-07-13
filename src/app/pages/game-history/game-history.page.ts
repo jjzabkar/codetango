@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
+import {firestore} from 'firebase';
 import {first} from 'rxjs/operators';
 import {games, GameService} from 'src/app/services/game.service';
 import {Game} from 'types';
@@ -75,10 +76,24 @@ export class GameHistoryPage {
   }
 
   async migrate() {
-    let migrated = 0;
+    let num = 0;
+    let unique = {};
+    const db = firestore();
+    const batch = db.batch();
     for (const game of games) {
-      await this.gameService.createGame(game);
-      console.log(`migrated ${++migrated}`);
+      num++;
+      batch.set(
+          db.collection('games').doc(`migrated-${game.completedAt}`), game);
+
+      if (!unique[game.completedAt]) {
+        unique[game.completedAt] = true;
+      } else {
+        console.log(game.completedAt);
+      }
     }
+
+    console.log(`${num} games to set, ${Object.keys(unique).length} unique`);
+    await batch.commit();
+    console.log('all done');
   }
 }
