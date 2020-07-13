@@ -72,8 +72,7 @@ export class GameService {
         }));
   }
 
-  getCompletedGames(roomId: string, limit?: number, startAfter?: number):
-      Observable<Game[]> {
+  getCompletedGames(roomId: string, limit?: number): Observable<Game[]> {
     return this.afs
         .collection<Game>(
             'games',
@@ -81,36 +80,6 @@ export class GameService {
               let query = ref.where('roomId', '==', roomId)
                               .orderBy('completedAt', 'desc');
 
-              // support limiting
-              if (limit) {
-                query = query.limit(limit);
-              }
-
-              // start after a given completedAt timestamp
-              if (startAfter) {
-                query = query.startAfter(startAfter);
-              }
-
-              return query;
-            })
-        .snapshotChanges()
-        .pipe(map(actions => {
-          return actions.map(action => {
-            const {doc} = action.payload;
-            return {id: doc.id, ...doc.data()};
-          });
-        }));
-  }
-
-  getUserGames(userId: string, limit?: number): Observable<Game[]> {
-    return this.afs
-        .collection<Game>(
-            'games',
-            ref => {
-              let query = ref.where('userIds', 'array-contains', userId)
-                              .orderBy('completedAt', 'asc');
-
-              // support limiting
               if (limit) {
                 query = query.limit(limit);
               }

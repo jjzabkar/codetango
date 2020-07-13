@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import * as moment from 'moment';
 import {Game, GameStatus} from 'types';
 
@@ -12,9 +11,7 @@ export class GameCardComponent implements OnInit {
   @Input() game: Game;
   completedMoment: moment.Moment;
 
-  constructor(
-      private readonly router: Router,
-  ) {}
+  constructor() {}
 
   ngOnInit() {
     this.completedMoment = moment(this.game.completedAt);
@@ -60,9 +57,5 @@ export class GameCardComponent implements OnInit {
     }
 
     return {date, time};
-  }
-
-  gameClicked() {
-    this.router.navigate([this.game.roomId, 'games', this.game.id]);
   }
 }

@@ -6,33 +6,19 @@
     <ion-title>Game History</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="migrate()">Migrate</ion-button>
-      <ion-button (click)="reset()">
-        <ion-icon name="refresh" slot="icon-only"></ion-icon>
-      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- list of games -->
-  <div class="games-container" *ngIf="games; else loading">
-    <ng-container *ngIf="games.length > 0; else empty">
-      <app-game-card [game]="game" *ngFor="let game of games"></app-game-card>
-    </ng-container>
+  <div class="games-container" *ngIf="games$ | async as games; else loading">
+    <app-game-card
+      *ngFor="let game of games"
+      [game]="game"
+      (click)="gameClicked(game)">
+    </app-game-card>
   </div>
-
-  <!-- infinite scroll -->
-  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadMore($event)" [disabled]="infiniteScrollDisabled">
-    <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
 </ion-content>
-
-<ng-template #empty>
-  <div class="empty-container">
-    <h3>No games have been completed yet!</h3>
-    <ion-button [routerLink]="['/' + roomId]">Play your first game</ion-button>
-  </div>
-</ng-template>
 
 <ng-template #loading>
   <div class="spinner-container">

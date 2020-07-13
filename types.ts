@@ -89,9 +89,6 @@ export interface Game {
   status: GameStatus;
   roomId: string;
 
-  // set by the server for querying
-  userIds?: string[];
-
   // client fields
   id?: string;
 }
@@ -132,7 +129,6 @@ export interface UserStats {
   gamesWon: number;
   spymasterGames: number;
   spymasterWins: number;
-  assassinsAsSpymaster: number;
   currentStreak: number;
   bestStreak: number;
   provisional: boolean;
