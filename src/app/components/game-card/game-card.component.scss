@@ -1,12 +1,6 @@
 .game-card {
-  max-width: 800px;
-  margin: 20px auto;
-
-  ion-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  cursor: pointer;
+  margin: 20px 0;
 
   .game-status {
     text-transform: uppercase;
